@@ -58,3 +58,8 @@ print 'submit query'
 result = session.execute('select count from ' + table_name + ' group by user')
 print result.getRows()
 ```
+
+Authors
+-------
+
+Matthew Byrd <mbyrd@acunu.com>
