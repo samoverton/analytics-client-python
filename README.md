@@ -5,20 +5,20 @@ Create tables and cubes, insert data and query aggregates with Python!
 
 
 Requirements
-============
+------------
 
 Python 2.6+
 
 
 Installation
-============
+------------
 
 ```
 sudo python setup.py install
 ```
 
 Sample code:
-============
+------------
 
 ```
 #!/usr/bin/python2.6
