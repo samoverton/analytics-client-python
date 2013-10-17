@@ -1,0 +1,31 @@
+Name:           python26-acunu-analytics
+Version:        @@SOURCEVER@@
+Release:        %{?release}%{?!release:1}
+Summary:        Acunu Analytics Python API
+
+Group:          Filesystem
+License:        No
+Source0:        %{name}-%{version}.tar.gz
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+Requires:       jbird
+
+%description
+Python client for the Acunu Analytics API
+
+%prep
+%setup -q -n %{name}-%{version}
+
+%build
+
+%install
+export DESTDIR=%{buildroot}
+mkdir -p %{buildroot}/usr/lib/python2.6/site-packages/acunu
+cp -r acunu/*.py %{buildroot}/usr/lib/python2.6/site-packages/acunu
+
+%clean
+rm -rf %{buildroot}
+
+%files
+%defattr(-,root,root,-)
+/usr/lib/python2.6/site-packages

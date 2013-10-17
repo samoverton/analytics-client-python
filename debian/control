@@ -1,0 +1,13 @@
+Source: python-acunu-analytics
+Maintainer: Acunu <support@acunu.com>
+Section: python
+Priority: optional
+Homepage: http://www.acunu.com/
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.3
+
+Package: python-acunu-analytics
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: High level Python client for Acunu Analytics
+
