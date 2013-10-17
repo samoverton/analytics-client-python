@@ -10,10 +10,18 @@ Requirements
 Python 2.6+
 
 
+Installation
+============
+
+```
+sudo python setup.py install
+```
+
 Sample code:
 ============
 
-```#!/usr/bin/python2.6
+```
+#!/usr/bin/python2.6
 
 from acunu import analytics
 import random
